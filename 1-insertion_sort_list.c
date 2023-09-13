@@ -2,7 +2,7 @@
 
 /**
  * insertion_sort_list - Sorts doubly linked list in ascending order
- *                       usin Sorts doubly linked list in ascending orderg the Insertion Sort algorithm.
+ *                       using the Insertion Sort algorithm.
  *
  * @list: Pointer to a pointer to the head of the list
  */
@@ -43,5 +43,3 @@ void insertion_sort_list(listint_t **list)
 		current = next_node;
 	}
 }
-
-
