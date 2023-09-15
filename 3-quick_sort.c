@@ -1,5 +1,11 @@
 #include "sort.h"
 
+/**
+ * _swap - Swap two numbers.
+ * @a: Integer
+ * @b: Integer
+ **/
+
 void _swap(int *a, int *b)
 {
 	int tmp;
@@ -10,7 +16,14 @@ void _swap(int *a, int *b)
 
 }
 
-
+/**
+ * _split - Split the array and takes the last element as pivot
+ * @arr: Array
+ * @min: First element
+ * @last: Last element
+ * @size: Size
+ * Return: Integer
+ **/
 int _split(int *arr, int min, int last, size_t size)
 {
 	int piv;
@@ -41,7 +54,14 @@ int _split(int *arr, int min, int last, size_t size)
 	return (i);
 }
 
-
+/**
+ * quick_sort_array - The quick short array
+ * @arr: arr
+ * @min: min
+ * @last: last
+ * @size: size
+ * Return: Nothing
+ */
 void quick_sort_array(int *arr, int min, int last, size_t size)
 {
 
@@ -55,6 +75,11 @@ void quick_sort_array(int *arr, int min, int last, size_t size)
 	}
 }
 
+/**
+ * quick_sort -Sort an array using quick_sort algorithm
+ * @array: array
+ * @size: size
+ **/
 void quick_sort(int *array, size_t size)
 {
 	if (size < 2)
